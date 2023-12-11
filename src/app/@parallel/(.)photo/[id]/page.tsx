@@ -5,5 +5,5 @@ export default function PhotoPage({
 }: {
   params: { id: number };
 }) {
-  return <PhotoDetail id={id} />;
+  return <PhotoDetail id={id} bg="intercept" />;
 }
