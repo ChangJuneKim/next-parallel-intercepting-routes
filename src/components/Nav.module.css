@@ -1,0 +1,14 @@
+/* Nav */
+.nav {
+  border-bottom: 1px solid #f1f2f4;
+  box-shadow: 0 4px 20px #f1f2f4;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.navLink {
+  color: #555;
+  font-weight: bolder;
+}
