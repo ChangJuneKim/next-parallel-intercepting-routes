@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.gallery}>
       {imgUrls.map((imgUrl, index) => {
         return (
-          <Link key={index} href={`/photo/${index}`}>
+          <Link key={index} href={`/photo/${index}`} scroll={false}>
             <Image
               src={imgUrl}
               alt={imgUrl}

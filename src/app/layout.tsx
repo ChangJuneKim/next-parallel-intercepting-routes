@@ -12,15 +12,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  parallel,
 }: {
   children: React.ReactNode;
+  parallel: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <Nav />
-        {children}
+        <main>
+          {children}
+          {parallel}
+        </main>
       </body>
     </html>
   );
 }
+
+// 주소가 localhost:3000 일 경우
+// children -> app/page.tsx
+// parallel -> @parallel/default.tsx

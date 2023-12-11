@@ -1,11 +1,11 @@
 import Modal from "@/components/Modal";
-import styles from "@/app/auth/sign-in/page.module.css";
+import styles from "@/app/@parallel/(.)auth/sign-up/page.module.css";
 
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
-    <Modal>
+    <Modal bg="intercept">
       <div className={styles.container}>
-        <h1>로그인</h1>
+        <h1>회원가입</h1>
         <form>
           <div>
             <label htmlFor="email">이메일</label>
@@ -15,6 +15,15 @@ export default function LoginPage() {
           <div>
             <label htmlFor="password">비밀번호</label>
             <input type="password" name="password" id="password" />
+          </div>
+
+          <div>
+            <label htmlFor="check-password">비밀번호 확인</label>
+            <input
+              type="check-password"
+              name="check-password"
+              id="check-password"
+            />
           </div>
         </form>
       </div>

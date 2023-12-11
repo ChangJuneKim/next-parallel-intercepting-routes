@@ -1,9 +1,9 @@
 import Modal from "@/components/Modal";
-import styles from "@/app/auth/sign-in/page.module.css";
+import styles from "@/app/@parallel/(.)auth/sign-in/page.module.css";
 
 export default function LoginPage() {
   return (
-    <Modal>
+    <Modal bg="intercept">
       <div className={styles.container}>
         <h1>로그인</h1>
         <form>
